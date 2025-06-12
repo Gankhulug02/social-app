@@ -3,7 +3,7 @@ require("dotenv").config();
 const express = require("express");
 const connectDB = require("./db/connect");
 const userRoutes = require("./routes/user-routes");
-const { notFound, errorHandler } = require("./middlware/error-handler");
+const { notFound, errorHandler } = require("./middleware/error-handler");
 
 const app = express();
 const port = 8000;
